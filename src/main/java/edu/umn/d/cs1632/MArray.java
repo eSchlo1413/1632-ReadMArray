@@ -29,7 +29,7 @@ class MArray {
                     try {
                         int testInt = Integer.valueOf(cell);
                             //Value is an int
-                            Value iCell = new IntValue(cell + "(I)");
+                            Value iCell = new IntValue(cell);
                             currentRow.add(iCell);
                         }
                     catch(Exception e)

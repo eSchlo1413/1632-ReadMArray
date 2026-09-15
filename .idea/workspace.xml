@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c966cf8e-c9ef-49c7-8e37-dab19cc9b2be" name="Changes" comment="So far made abstract classes intValue DoubleValue and stirngValue. Implemented most of the code in MArray so that a 2D array stores rows of arraylists that are the actual values that get converted from strings.">
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/umn/d/cs1632/StringValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/umn/d/cs1632/StringValue.java" afterDir="false" />
+    <list default="true" id="c966cf8e-c9ef-49c7-8e37-dab19cc9b2be" name="Changes" comment="Strings now print properly">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/umn/d/cs1632/IntValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/umn/d/cs1632/IntValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/umn/d/cs1632/MArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/umn/d/cs1632/MArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/umn/d/cs1632/IntValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/umn/d/cs1632/IntValue.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +55,7 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -71,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1788977385659</updated>
       <workItem from="1788977386908" duration="4126000" />
-      <workItem from="1789510245778" duration="4413000" />
+      <workItem from="1789510245778" duration="4754000" />
     </task>
     <task id="LOCAL-00001" summary="So far made abstract classes intValue DoubleValue and stirngValue. Implemented most of the code in MArray so that a 2D array stores rows of arraylists that are the actual values that get converted from strings.">
       <option name="closed" value="true" />
@@ -81,14 +85,34 @@
       <option name="project" value="LOCAL" />
       <updated>1789516190067</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Strings now print properly">
+      <option name="closed" value="true" />
+      <created>1789516303072</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1789516303072</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="So far made abstract classes intValue DoubleValue and stirngValue. Implemented most of the code in MArray so that a 2D array stores rows of arraylists that are the actual values that get converted from strings." />
-    <option name="LAST_COMMIT_MESSAGE" value="So far made abstract classes intValue DoubleValue and stirngValue. Implemented most of the code in MArray so that a 2D array stores rows of arraylists that are the actual values that get converted from strings." />
+    <MESSAGE value="Strings now print properly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Strings now print properly" />
   </component>
 </project>
