@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c966cf8e-c9ef-49c7-8e37-dab19cc9b2be" name="Changes" comment="Strings now print properly">
+    <list default="true" id="c966cf8e-c9ef-49c7-8e37-dab19cc9b2be" name="Changes" comment="Moved the &quot;+ (I)&quot; into the abstract class. Worked much better">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/umn/d/cs1632/IntValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/umn/d/cs1632/IntValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/umn/d/cs1632/DoubleValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/umn/d/cs1632/DoubleValue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/umn/d/cs1632/MArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/umn/d/cs1632/MArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/umn/d/cs1632/IntValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/umn/d/cs1632/IntValue.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1788977385659</updated>
       <workItem from="1788977386908" duration="4126000" />
-      <workItem from="1789510245778" duration="4754000" />
+      <workItem from="1789510245778" duration="4876000" />
     </task>
     <task id="LOCAL-00001" summary="So far made abstract classes intValue DoubleValue and stirngValue. Implemented most of the code in MArray so that a 2D array stores rows of arraylists that are the actual values that get converted from strings.">
       <option name="closed" value="true" />
@@ -93,7 +92,15 @@
       <option name="project" value="LOCAL" />
       <updated>1789516303072</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Moved the &quot;+ (I)&quot; into the abstract class. Worked much better">
+      <option name="closed" value="true" />
+      <created>1789516635489</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1789516635489</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +120,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="So far made abstract classes intValue DoubleValue and stirngValue. Implemented most of the code in MArray so that a 2D array stores rows of arraylists that are the actual values that get converted from strings." />
     <MESSAGE value="Strings now print properly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Strings now print properly" />
+    <MESSAGE value="Moved the &quot;+ (I)&quot; into the abstract class. Worked much better" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved the &quot;+ (I)&quot; into the abstract class. Worked much better" />
   </component>
 </project>

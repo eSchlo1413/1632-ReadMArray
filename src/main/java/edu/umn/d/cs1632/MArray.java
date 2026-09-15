@@ -39,7 +39,7 @@ class MArray {
                         try {
                             double testDouble = Double.valueOf(cell);
                             //Value is a double
-                            Value dCell = new DoubleValue(cell + "(D)");
+                            Value dCell = new DoubleValue(cell);
                             currentRow.add(dCell);
                         }
                         catch (Exception j) {
