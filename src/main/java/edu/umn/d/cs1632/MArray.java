@@ -1,8 +1,11 @@
 package edu.umn.d.cs1632;
 
 import com.opencsv.CSVReader;
+import com.opencsv.exceptions.CsvException;
 
+import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -12,7 +15,6 @@ class MArray {
     // ArrayList<ArrayList<DataItem>> data;
     private MArray() {}
     public MArray(String fileName) {
-
         try {
             FileReader filereader = new FileReader(fileName);
             CSVReader csvReader = new CSVReader(filereader);
@@ -59,6 +61,7 @@ class MArray {
 
 
             }
+            System.out.println("Data: ");
             for(List<Value> r : finalMatrix)
             {
                 for(Value v : r)
@@ -69,7 +72,7 @@ class MArray {
                 System.out.println("");
             }
         }
-        catch (Exception e) {
+        catch (IOException | CsvException e) {
             e.printStackTrace();
         }
     }
