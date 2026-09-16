@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c966cf8e-c9ef-49c7-8e37-dab19cc9b2be" name="Changes" comment="Did the same thing for doubles">
+    <list default="true" id="c966cf8e-c9ef-49c7-8e37-dab19cc9b2be" name="Changes" comment="Added scanners to get input. Setting up all possiblities for letters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/umn/d/cs1632/MArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/umn/d/cs1632/MArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/umn/d/cs1632/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/umn/d/cs1632/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/umn/d/cs1632/MArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/umn/d/cs1632/MArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/umn/d/cs1632/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/umn/d/cs1632/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1788977385659</updated>
       <workItem from="1788977386908" duration="4126000" />
-      <workItem from="1789510245778" duration="7835000" />
+      <workItem from="1789510245778" duration="12606000" />
     </task>
     <task id="LOCAL-00001" summary="So far made abstract classes intValue DoubleValue and stirngValue. Implemented most of the code in MArray so that a 2D array stores rows of arraylists that are the actual values that get converted from strings.">
       <option name="closed" value="true" />
@@ -110,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1789516752168</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added scanners to get input. Setting up all possiblities for letters">
+      <option name="closed" value="true" />
+      <created>1789523702687</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1789523702687</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +138,7 @@
     <MESSAGE value="Strings now print properly" />
     <MESSAGE value="Moved the &quot;+ (I)&quot; into the abstract class. Worked much better" />
     <MESSAGE value="Did the same thing for doubles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Did the same thing for doubles" />
+    <MESSAGE value="Added scanners to get input. Setting up all possiblities for letters" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added scanners to get input. Setting up all possiblities for letters" />
   </component>
 </project>

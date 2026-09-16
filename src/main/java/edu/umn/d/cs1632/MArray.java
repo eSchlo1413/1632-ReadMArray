@@ -14,20 +14,21 @@ class MArray {
     // ArrayList<Feature> featureList;
     // ArrayList<ArrayList<DataItem>> data;
     private MArray() {}
-    public MArray(String fileName) {
+    public MArray(String fileName){
+        //Creates final 2D array to store in values and counts rows of this array
+        List<List<Value>> finalMatrix = new ArrayList<>();
+        int rows = 0;
         try {
+            //Reads in csv file
             FileReader filereader = new FileReader(fileName);
             CSVReader csvReader = new CSVReader(filereader);
             List<String[]> allData = csvReader.readAll();
 
-            List<List<Value>> finalMatrix = new ArrayList<>();
-            int rows = 0;
-
+            //Goes through rows of data
             for (String[] row : allData) {
                 List<Value> currentRow = new ArrayList<>();
                 for (String cell : row) {
-                    //System.out.print(cell + "\t");
-                    //Checks if string is number by valueOf, then checks for double
+                    //Checks if Value is a number by valueOf, if so we make a new int value and add it to matrix
                     try {
                         int testInt = Integer.valueOf(cell);
                             //Value is an int
@@ -36,31 +37,27 @@ class MArray {
                         }
                     catch(Exception e)
                     {
-                        //Not an int
-                        //Proceed
+                        //Not an int, proceed
                         try {
+                            //Tests to see if value is a double same way for an int
                             double testDouble = Double.valueOf(cell);
                             //Value is a double
                             Value dCell = new DoubleValue(cell);
                             currentRow.add(dCell);
                         }
+                        //If the value is neither, assume it is a string
                         catch (Exception j) {
                             //Value is a string
                             Value sCell = new StringValue(cell + "(S)");
                             currentRow.add(sCell);
-
                         }
-
-
-
                     }
+                    //Move to the next row
                     rows++;
                 }
-
                 finalMatrix.add(currentRow);
-
-
             }
+            //Final print out, displays each value row by row
             System.out.println("Data: ");
             for(List<Value> r : finalMatrix)
             {
@@ -76,4 +73,6 @@ class MArray {
             e.printStackTrace();
         }
     }
+
+
 }
