@@ -152,7 +152,61 @@ public class Main {
             }
             else if(command.equals("M"))
             {
+                System.out.println("Enter starting row index");
+                int rowStart = file.nextInt();
+                System.out.println("Enter ending row index");
+                int rowEnd = file.nextInt();
+                System.out.println("Enter starting column index");
+                int colStart = file.nextInt();
+                System.out.println("Enter ending column index");
+                int colEnd = file.nextInt();
+                boolean currentlyInt = false;
+                boolean currentlyDouble = false;
+                boolean currentlyString = false;
 
+                for(int col = colStart; col <= colEnd; col++)
+                {
+                    for(int row = rowStart; row <= rowEnd; row++)
+                    {
+                        Value value = finalMatrix.get(row).get(col);
+                        if (value instanceof IntValue) {
+                            currentlyInt = true;
+                            if (currentlyDouble == true || currentlyString == true) {
+                                row = (rowEnd + 1);
+                                col = (colEnd + 1);
+                                System.out.println("Multiple");
+                            }
+                            if (col == colEnd && row == rowEnd) {
+                                System.out.println("Int");
+                            }
+                        } else if (value instanceof DoubleValue) {
+                            currentlyDouble = true;
+                            if (currentlyInt == true || currentlyString == true) {
+                                row = (rowEnd + 1);
+                                col = (colEnd + 1);
+                                System.out.println("Multiple");
+                            }
+                            if (col == colEnd && row == rowEnd) {
+                                System.out.println("Double");
+                            }
+                        } else {
+                            currentlyString = true;
+                            if (currentlyInt == true || currentlyDouble == true) {
+                                row = (rowEnd + 1);
+                                col = (colEnd + 1);
+                                System.out.println("Multiple");
+                            }
+                            if (col == colEnd && row == rowEnd) {
+                                System.out.println("String");
+                            }
+                        }
+
+                    }
+                }
+
+                currentlyString = false;
+                currentlyInt = false;
+                currentlyDouble = false;
             }
             else
             {
