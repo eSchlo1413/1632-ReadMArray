@@ -99,17 +99,21 @@ public class Main {
                 boolean currentlyDouble = false;
                 boolean currentlyString = false;
 
-                for(int col = colStart; row <= colEnd; row++)
+                for(int col = colStart; col <= colEnd; col++)
                 {
                     Value value = finalMatrix.get(row).get(col);
                     if (value instanceof IntValue)
                     {
+                        currentlyInt = true;
                         if(currentlyDouble == true || currentlyString == true)
                         {
                             col = (colEnd + 1);
                             System.out.println("Multiple");
                         }
-                        currentlyInt = true;
+                        if(col == colEnd)
+                        {
+                            System.out.println("Int");
+                        }
                     }
                     else if (value instanceof DoubleValue)
                     {
@@ -119,6 +123,10 @@ public class Main {
                             col = (colEnd + 1);
                             System.out.println("Multiple");
                         }
+                        if(col == colEnd)
+                        {
+                            System.out.println("Double");
+                        }
                     }
                     else
                     {
@@ -127,10 +135,20 @@ public class Main {
                         {
                             col = (colEnd + 1);
                             System.out.println("Multiple");
+
+
+                        }
+                        if(col == colEnd)
+                        {
+                            System.out.println("String");
                         }
                     }
 
                 }
+
+                currentlyString = false;
+                currentlyInt = false;
+                currentlyDouble = false;
             }
             else if(command.equals("M"))
             {

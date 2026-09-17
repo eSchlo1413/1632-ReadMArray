@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c966cf8e-c9ef-49c7-8e37-dab19cc9b2be" name="Changes" comment="Test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/umn/d/cs1632/MArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/umn/d/cs1632/MArray.java" afterDir="false" />
+    <list default="true" id="c966cf8e-c9ef-49c7-8e37-dab19cc9b2be" name="Changes" comment="Starting to work the queries using file scanner, if statements and checks and loops. V is secure just need to implement H and M">
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/umn/d/cs1632/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/umn/d/cs1632/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/umn/d/cs1632/MArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/umn/d/cs1632/MArray.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/edu/umn/d/cs1632/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/umn/d/cs1632/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +74,7 @@
       <updated>1788977385659</updated>
       <workItem from="1788977386908" duration="4126000" />
       <workItem from="1789510245778" duration="12814000" />
-      <workItem from="1789592406753" duration="9669000" />
+      <workItem from="1789592406753" duration="9868000" />
     </task>
     <task id="LOCAL-00001" summary="So far made abstract classes intValue DoubleValue and stirngValue. Implemented most of the code in MArray so that a 2D array stores rows of arraylists that are the actual values that get converted from strings.">
       <option name="closed" value="true" />
@@ -127,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1789581893704</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Starting to work the queries using file scanner, if statements and checks and loops. V is secure just need to implement H and M">
+      <option name="closed" value="true" />
+      <created>1789610342165</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1789610342165</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +156,7 @@
     <MESSAGE value="Did the same thing for doubles" />
     <MESSAGE value="Added scanners to get input. Setting up all possiblities for letters" />
     <MESSAGE value="Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test" />
+    <MESSAGE value="Starting to work the queries using file scanner, if statements and checks and loops. V is secure just need to implement H and M" />
+    <option name="LAST_COMMIT_MESSAGE" value="Starting to work the queries using file scanner, if statements and checks and loops. V is secure just need to implement H and M" />
   </component>
 </project>
