@@ -1,6 +1,7 @@
 package edu.umn.d.cs1632;
 
 import java.io.FileNotFoundException;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -13,35 +14,125 @@ public class Main {
 
         // Put your code for queries here
         //Loops through scanners for user input, accept 5 outcomes
+        List<List<Value>> finalMatrix = mArray.getFinalMatrix();
         boolean continueLoop = true;
         while(continueLoop == true)
         {
-            Scanner Qre = new Scanner(System.in);
-            if(Qre.next().equals("Q"))
+            System.out.println("Enter Letter");
+            String command = file.next();
+            if(command.equals("Q"))
             {
                 continueLoop = false;
             }
-            else if(Qre.next().equals("V"))
+            else if(command.equals("V"))
             {
-                int col = Qre.nextInt();
-                int rowStart = Qre.nextInt();
-                int rowEnd = Qre.nextInt();
+                System.out.println("Enter column");
+                int col = file.nextInt();
+                System.out.println("Enter starting row index");
+                int rowStart = file.nextInt();
+                System.out.println("Enter ending row index");
+                int rowEnd = file.nextInt();
+                boolean currentlyInt = false;
+                boolean currentlyDouble = false;
+                boolean currentlyString = false;
 
-                for(rowStart = rowEnd; rowStart <= rowEnd; rowStart++)
+                for(int row = rowStart; row <= rowEnd; row++)
                 {
-                    if (finalMatrix.get(col).get(rowStart))
+                    Value value = finalMatrix.get(row).get(col);
+                    if (value instanceof IntValue)
                     {
+                        currentlyInt = true;
+                        if(currentlyDouble == true || currentlyString == true)
+                        {
+                            row = (rowEnd + 1);
+                            System.out.println("Multiple");
+                        }
+                        if(row == rowEnd)
+                        {
+                            System.out.println("Int");
+                        }
+                    }
+                    else if (value instanceof DoubleValue)
+                    {
+                        currentlyDouble = true;
+                        if(currentlyInt == true || currentlyString == true)
+                        {
+                            row = (rowEnd + 1);
+                            System.out.println("Multiple");
+                        }
+                        if(row == rowEnd)
+                        {
+                            System.out.println("Double");
+                        }
+                    }
+                    else
+                    {
+                        currentlyString = true;
+                        if(currentlyInt == true || currentlyDouble == true)
+                        {
+                            row = (rowEnd + 1);
+                            System.out.println("Multiple");
 
+
+                        }
+                        if(row == rowEnd)
+                        {
+                            System.out.println("String");
+                        }
                     }
 
                 }
 
+                currentlyString = false;
+                currentlyInt = false;
+                currentlyDouble = false;
             }
-            else if(Qre.next().equals("H"))
+            else if(command.equals("H"))
             {
+                System.out.println("Enter row");
+                int row = file.nextInt();
+                System.out.println("Enter starting column index");
+                int colStart = file.nextInt();
+                System.out.println("Enter ending column index");
+                int colEnd = file.nextInt();
+                boolean currentlyInt = false;
+                boolean currentlyDouble = false;
+                boolean currentlyString = false;
 
+                for(int col = colStart; row <= colEnd; row++)
+                {
+                    Value value = finalMatrix.get(row).get(col);
+                    if (value instanceof IntValue)
+                    {
+                        if(currentlyDouble == true || currentlyString == true)
+                        {
+                            col = (colEnd + 1);
+                            System.out.println("Multiple");
+                        }
+                        currentlyInt = true;
+                    }
+                    else if (value instanceof DoubleValue)
+                    {
+                        currentlyDouble = true;
+                        if(currentlyInt == true || currentlyString == true)
+                        {
+                            col = (colEnd + 1);
+                            System.out.println("Multiple");
+                        }
+                    }
+                    else
+                    {
+                        currentlyString = true;
+                        if(currentlyInt == true || currentlyDouble == true)
+                        {
+                            col = (colEnd + 1);
+                            System.out.println("Multiple");
+                        }
+                    }
+
+                }
             }
-            else if(Qre.next().equals("M"))
+            else if(command.equals("M"))
             {
 
             }

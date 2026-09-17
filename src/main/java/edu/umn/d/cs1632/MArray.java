@@ -13,10 +13,10 @@ import java.util.List;
 class MArray {
     // ArrayList<Feature> featureList;
     // ArrayList<ArrayList<DataItem>> data;
-    private MArray() {}
+    private List<List<Value>> finalMatrix = new ArrayList<>();
     public MArray(String fileName){
         //Creates final 2D array to store in values and counts rows of this array
-        List<List<Value>> finalMatrix = new ArrayList<>();
+
         int rows = 0;
         try {
             //Reads in csv file
@@ -74,5 +74,9 @@ class MArray {
         }
     }
 
+    public List<List<Value>> getFinalMatrix()
+    {
+        return finalMatrix;
+    }
 
 }
